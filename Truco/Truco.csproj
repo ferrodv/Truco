@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D54A7C3-B4ED-45CE-9452-EEB2437FE79B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Truco</RootNamespace>
+    <AssemblyName>Truco</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Carta.cs" />
+    <Compile Include="Classes\Conector.cs" />
+    <Compile Include="Forms\Form0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form0.Designer.cs">
+      <DependentUpon>Form0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Game.cs" />
+    <Compile Include="Classes\Jugador.cs" />
+    <Compile Include="Classes\Mazo.cs" />
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Form0.resx">
+      <DependentUpon>Form0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\Mesa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\1_Basto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\1_Copa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\1_Espada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\1_Oro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\2_Basto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\2_Copa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\2_Espada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\2_Oro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\3_Basto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\3_Copa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\3_Espada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\3_Oro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\4_Bastp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\4_Copa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\4_Espada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\4_Oro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\5_Basto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\5_Copa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\5_Espada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\5_Oro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\6_Basto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\6_Copa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\6_Espada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\6_Oro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\7_Basto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\7_Copa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\7_Espada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\7_Oro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\10_Basto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\10_Copa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\10_Espada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\10_Oro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\11_Basto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\11_Copa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\11_Espada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\11_Oro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\12_Basto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\12_Copa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\12_Espada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\12_Oro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\Downside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\AS_BASTO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\AS_COPA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\AS_ESPADA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\AS_ORO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\CABALLO_BASTO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\CABALLO_COPA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\CABALLO_ESPADA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\CABALLO_ORO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\CINCO_BASTO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\CINCO_COPA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\CINCO_ESPADA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\CINCO_ORO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\CUATRO_BASTO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\CUATRO_COPA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\CUATRO_ESPADA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\CUATRO_ORO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\DOS_BASTO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\DOS_COPA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\DOS_ESPADA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\DOS_ORO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\Downside.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\REY_BASTO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\REY_COPA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\REY_ESPADA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\REY_ORO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\SEIS_BASTO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\SEIS_COPA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\SEIS_ESPADA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\SEIS_ORO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\SIETE_BASTO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\SIETE_COPA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\SIETE_ESPADA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\SIETE_ORO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\SOTA_BASTO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\SOTA_COPA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\SOTA_ESPADA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\SOTA_ORO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\TRES_BASTO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\TRES_COPA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\TRES_ESPADA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\TRES_ORO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\cartas\cartas\Mesa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Assets\Fondo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

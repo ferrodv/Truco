@@ -1,0 +1,10 @@
+C:\Users\ferdy\OneDrive\Escritorio\IDE's\Proyectos\Truco\bin\Debug\Truco.exe
+C:\Users\ferdy\OneDrive\Escritorio\IDE's\Proyectos\Truco\bin\Debug\Truco.pdb
+C:\Users\ferdy\OneDrive\Escritorio\IDE's\Proyectos\Truco\obj\Debug\Truco.csprojAssemblyReference.cache
+C:\Users\ferdy\OneDrive\Escritorio\IDE's\Proyectos\Truco\obj\Debug\Truco.Properties.Resources.resources
+C:\Users\ferdy\OneDrive\Escritorio\IDE's\Proyectos\Truco\obj\Debug\Truco.csproj.GenerateResource.cache
+C:\Users\ferdy\OneDrive\Escritorio\IDE's\Proyectos\Truco\obj\Debug\Truco.csproj.CoreCompileInputs.cache
+C:\Users\ferdy\OneDrive\Escritorio\IDE's\Proyectos\Truco\obj\Debug\Truco.exe
+C:\Users\ferdy\OneDrive\Escritorio\IDE's\Proyectos\Truco\obj\Debug\Truco.pdb
+C:\Users\ferdy\OneDrive\Escritorio\IDE's\Proyectos\Truco\obj\Debug\Truco.Form1.resources
+C:\Users\ferdy\OneDrive\Escritorio\IDE's\Proyectos\Truco\obj\Debug\Truco.Form0.resources
